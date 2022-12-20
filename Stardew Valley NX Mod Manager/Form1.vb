@@ -8,7 +8,7 @@ Public Class Form1
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         'initialize SevenZipExtractor
         SevenZipExtractor.SetLibraryPath("7z.dll")
-        MessageBox.Show("When Exporting It'll Create A New Folder 0100E65002BB8000 Containing The Merged Mods Anywhere You Define!")
+        MessageBox.Show("When Exporting It'll Create A New Folder 0100E65002BB8000 Containing The Merged Mods Anywhere You Define!", "Stardew Valley NX Mod Manager")
     End Sub
 
     Private Sub CreditsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CreditsToolStripMenuItem.Click
