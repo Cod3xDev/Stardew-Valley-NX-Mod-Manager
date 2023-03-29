@@ -32,14 +32,40 @@ Public Class Form1
         Dim folderDialog As New FolderBrowserDialog()
         folderDialog.Description = "Select Output Directory"
         If folderDialog.ShowDialog() = DialogResult.OK Then
-            'unpack all .7z files in list
-            For Each file In _7zFileList
-                Dim extractor As New SevenZipExtractor(file)
-                extractor.ExtractArchive(folderDialog.SelectedPath)
+            Dim fileDict As New Dictionary(Of String, String)
+
+            For Each archivePath In _7zFileList
+                Dim extractor As New SevenZipExtractor(archivePath)
+
+                For Each entry In extractor.ArchiveFileData
+                    If Not entry.IsDirectory AndAlso fileDict.ContainsKey(entry.FileName) Then
+                        Dim message As String = $"Duplicate file found: {entry.FileName}" & vbCrLf &
+                                            $"1. {fileDict(entry.FileName)}" & vbCrLf &
+                                            $"2. {archivePath}" & vbCrLf & vbCrLf &
+                                            "Select the version you want to keep (1 or 2):"
+
+                        Dim result As String = InputBox(message, "Duplicate File Found", "1")
+                        If result = "2" Then
+                            fileDict(entry.FileName) = archivePath
+                        End If
+                    ElseIf Not entry.IsDirectory Then
+                        fileDict(entry.FileName) = archivePath
+                    End If
+                Next
             Next
+
+            ' Extract only the selected files
+            For Each file In fileDict.Keys
+                Dim archivePath As String = fileDict(file)
+                Using extractor As New SevenZipExtractor(archivePath)
+                    extractor.ExtractFiles(folderDialog.SelectedPath, file)
+                End Using
+            Next
+
+            MessageBox.Show("Successfully Exported Merged Mods!")
         End If
-        MessageBox.Show("Successfully Exported Merged Mods!")
     End Sub
+
 
     Private Sub SaveToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SaveToolStripMenuItem.Click
         'prompt user for profile name
