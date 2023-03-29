@@ -1,3 +1,10 @@
+C:\Users\Cod3xDev\Documents\GitHub\Stardew-Valley-NX-Mod-Manager\Stardew Valley NX Mod Manager\bin\Debug\net7.0-windows\Stardew Valley NX Mod Manager.exe
+C:\Users\Cod3xDev\Documents\GitHub\Stardew-Valley-NX-Mod-Manager\Stardew Valley NX Mod Manager\bin\Debug\net7.0-windows\7z.dll
+C:\Users\Cod3xDev\Documents\GitHub\Stardew-Valley-NX-Mod-Manager\Stardew Valley NX Mod Manager\bin\Debug\net7.0-windows\Stardew Valley NX Mod Manager.deps.json
+C:\Users\Cod3xDev\Documents\GitHub\Stardew-Valley-NX-Mod-Manager\Stardew Valley NX Mod Manager\bin\Debug\net7.0-windows\Stardew Valley NX Mod Manager.runtimeconfig.json
+C:\Users\Cod3xDev\Documents\GitHub\Stardew-Valley-NX-Mod-Manager\Stardew Valley NX Mod Manager\bin\Debug\net7.0-windows\Stardew Valley NX Mod Manager.dll
+C:\Users\Cod3xDev\Documents\GitHub\Stardew-Valley-NX-Mod-Manager\Stardew Valley NX Mod Manager\bin\Debug\net7.0-windows\Stardew Valley NX Mod Manager.pdb
+C:\Users\Cod3xDev\Documents\GitHub\Stardew-Valley-NX-Mod-Manager\Stardew Valley NX Mod Manager\bin\Debug\net7.0-windows\SevenZipSharp.dll
 C:\Users\Cod3xDev\Documents\GitHub\Stardew-Valley-NX-Mod-Manager\Stardew Valley NX Mod Manager\obj\Debug\net7.0-windows\Stardew Valley NX Mod Manager.vbproj.AssemblyReference.cache
 C:\Users\Cod3xDev\Documents\GitHub\Stardew-Valley-NX-Mod-Manager\Stardew Valley NX Mod Manager\obj\Debug\net7.0-windows\Stardew_Valley_NX_Mod_Manager.Form1.resources
 C:\Users\Cod3xDev\Documents\GitHub\Stardew-Valley-NX-Mod-Manager\Stardew Valley NX Mod Manager\obj\Debug\net7.0-windows\Stardew_Valley_NX_Mod_Manager.Resources.resources
@@ -6,16 +13,9 @@ C:\Users\Cod3xDev\Documents\GitHub\Stardew-Valley-NX-Mod-Manager\Stardew Valley 
 C:\Users\Cod3xDev\Documents\GitHub\Stardew-Valley-NX-Mod-Manager\Stardew Valley NX Mod Manager\obj\Debug\net7.0-windows\Stardew Valley NX Mod Manager.AssemblyInfoInputs.cache
 C:\Users\Cod3xDev\Documents\GitHub\Stardew-Valley-NX-Mod-Manager\Stardew Valley NX Mod Manager\obj\Debug\net7.0-windows\Stardew Valley NX Mod Manager.AssemblyInfo.vb
 C:\Users\Cod3xDev\Documents\GitHub\Stardew-Valley-NX-Mod-Manager\Stardew Valley NX Mod Manager\obj\Debug\net7.0-windows\Stardew Valley NX Mod Manager.vbproj.CoreCompileInputs.cache
-C:\Users\Cod3xDev\Documents\GitHub\Stardew-Valley-NX-Mod-Manager\Stardew Valley NX Mod Manager\bin\Debug\net7.0-windows\Stardew Valley NX Mod Manager.exe
-C:\Users\Cod3xDev\Documents\GitHub\Stardew-Valley-NX-Mod-Manager\Stardew Valley NX Mod Manager\bin\Debug\net7.0-windows\Stardew Valley NX Mod Manager.deps.json
-C:\Users\Cod3xDev\Documents\GitHub\Stardew-Valley-NX-Mod-Manager\Stardew Valley NX Mod Manager\bin\Debug\net7.0-windows\Stardew Valley NX Mod Manager.runtimeconfig.json
-C:\Users\Cod3xDev\Documents\GitHub\Stardew-Valley-NX-Mod-Manager\Stardew Valley NX Mod Manager\bin\Debug\net7.0-windows\Stardew Valley NX Mod Manager.dll
-C:\Users\Cod3xDev\Documents\GitHub\Stardew-Valley-NX-Mod-Manager\Stardew Valley NX Mod Manager\bin\Debug\net7.0-windows\Stardew Valley NX Mod Manager.pdb
-C:\Users\Cod3xDev\Documents\GitHub\Stardew-Valley-NX-Mod-Manager\Stardew Valley NX Mod Manager\bin\Debug\net7.0-windows\SevenZipSharp.dll
 C:\Users\Cod3xDev\Documents\GitHub\Stardew-Valley-NX-Mod-Manager\Stardew Valley NX Mod Manager\obj\Debug\net7.0-windows\Stardew Valley NX Mod Manager.vbproj.CopyComplete
 C:\Users\Cod3xDev\Documents\GitHub\Stardew-Valley-NX-Mod-Manager\Stardew Valley NX Mod Manager\obj\Debug\net7.0-windows\Stardew Valley NX Mod Manager.dll
 C:\Users\Cod3xDev\Documents\GitHub\Stardew-Valley-NX-Mod-Manager\Stardew Valley NX Mod Manager\obj\Debug\net7.0-windows\refint\Stardew Valley NX Mod Manager.dll
 C:\Users\Cod3xDev\Documents\GitHub\Stardew-Valley-NX-Mod-Manager\Stardew Valley NX Mod Manager\obj\Debug\net7.0-windows\Stardew Valley NX Mod Manager.pdb
 C:\Users\Cod3xDev\Documents\GitHub\Stardew-Valley-NX-Mod-Manager\Stardew Valley NX Mod Manager\obj\Debug\net7.0-windows\Stardew Valley NX Mod Manager.genruntimeconfig.cache
 C:\Users\Cod3xDev\Documents\GitHub\Stardew-Valley-NX-Mod-Manager\Stardew Valley NX Mod Manager\obj\Debug\net7.0-windows\ref\Stardew Valley NX Mod Manager.dll
-C:\Users\Cod3xDev\Documents\GitHub\Stardew-Valley-NX-Mod-Manager\Stardew Valley NX Mod Manager\bin\Debug\net7.0-windows\7z.dll
