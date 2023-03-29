@@ -1,6 +1,6 @@
 ﻿Imports System.IO
-Imports System.Runtime.InteropServices.JavaScript.JSType
 Imports SevenZip
+
 Public Class Form1
     Private _7zFileList As New List(Of String) 'list to store .7z files
     Private _outputDirectory As String
@@ -12,7 +12,7 @@ Public Class Form1
     End Sub
 
     Private Sub CreditsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CreditsToolStripMenuItem.Click
-        MessageBox.Show("Version 0.1.2, Developed By Cod3xDev.", "About")
+        MessageBox.Show("Version 0.1.3, Developed By Cod3xDev.", "About")
     End Sub
 
     Private Sub OpenModToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles OpenModToolStripMenuItem.Click
@@ -23,11 +23,7 @@ Public Class Form1
         If openFileDialog.ShowDialog() = DialogResult.OK Then
             'add selected file to list and listbox with a prefix indicating its priority
             _7zFileList.Add(openFileDialog.FileName)
-            lbfiles.Items.Add($"[{_7zFileList.Count}] {openFileDialog.FileName}")
-            'update the prefixes of all the items in the list box
-            For i = 0 To _7zFileList.Count - 1
-                lbfiles.Items(i) = $"[{i + 1}] {_7zFileList(i)}"
-            Next
+            UpdateListBox()
         End If
     End Sub
 
@@ -50,10 +46,7 @@ Public Class Form1
         Dim name As String = InputBox("Enter a name for the profile:", "Save Profile")
         If name <> "" Then
             'create a new profile and save it to a file
-            Dim profile As New Profile()
-            profile.Name = name
-            profile.OutputDirectory = _outputDirectory
-            profile.Files.AddRange(_7zFileList)
+            Dim profile As New Profile(name, _outputDirectory, _7zFileList)
             profile.Save($"{name}.xml")
         End If
     End Sub
@@ -62,23 +55,27 @@ Public Class Form1
         'display a list of available profiles
         Dim profiles As New List(Of String)
         For Each file As String In Directory.GetFiles(".", "*.xml")
-            Dim profile As Profile = profile.Load(file)
+            Dim profile As Profile = Profile.Load(file)
             profiles.Add(profile.Name)
         Next
         Dim result As String = InputBox("Select a profile:", "Load Profile", String.Join(", ", profiles))
         If result <> "" Then
             'load the selected profile
-            Dim profile As Profile = profile.Load($"{result}.xml")
+            Dim profile As Profile = Profile.Load($"{result}.xml")
             _7zFileList = profile.Files
             _outputDirectory = profile.OutputDirectory
-            'update the listbox and output directory label
-            lbfiles.Items.Clear()
-            For Each file In _7zFileList
-                lbfiles.Items.Add($"[{_7zFileList.IndexOf(file) + 1}] {file}")
-            Next
-            'lblOutputDirectory.Text = _outputDirectory
+            'update the listbox
+            UpdateListBox()
         End If
     End Sub
+
+    Private Sub UpdateListBox()
+        lbfiles.Items.Clear()
+        For i = 0 To _7zFileList.Count - 1
+            lbfiles.Items.Add($"[{i + 1}] {_7zFileList(i)}")
+        Next
+    End Sub
+
 
     Private Sub btnMoveUp_Click(sender As Object, e As EventArgs) Handles btnMoveUp.Click
         'move selected item up in list and listbox

@@ -16,9 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Reference Include="SevenZipSharp">
-      <HintPath>..\..\..\..\Downloads\SevenZipSharp.dll</HintPath>
-    </Reference>
+    <PackageReference Include="Squid-Box.SevenZipSharp" Version="1.5.2.21" />
   </ItemGroup>
 
   <ItemGroup>
@@ -43,6 +41,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Update="7z.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>

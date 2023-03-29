@@ -7,7 +7,13 @@ Public Class Profile
     Public Property Files As List(Of String)
 
     Public Sub New()
-        Files = New List(Of String)
+        Files = New List(Of String)()
+    End Sub
+
+    Public Sub New(profileName As String, outputDir As String, fileList As List(Of String))
+        Name = profileName
+        OutputDirectory = outputDir
+        Files = fileList
     End Sub
 
     Public Sub Save(fileName As String)
